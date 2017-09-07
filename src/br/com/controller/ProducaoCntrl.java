@@ -85,15 +85,6 @@ public class ProducaoCntrl {
         return producDAO.listFindTotalMaq(producao);
     }
 
-//    public List listarBuscarDetMaq(String maquina, String data) {
-//        Maquina maq = new Maquina();
-//        maq.setMaq_descricao(maquina);
-//        Producao producao = new Producao();
-//        producao.setData(data);
-//        producao.setMaquina(maq);
-//        return producDAO.listDetMaq(producao);
-//    }
-
     public List listarDiaTab(String data) {
         Producao produc = new Producao();
         produc.setData(data);

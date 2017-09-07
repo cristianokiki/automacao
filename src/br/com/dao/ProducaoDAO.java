@@ -105,40 +105,6 @@ public class ProducaoDAO {
         return listaProducao;
     }
 
-    //producao detalhada por maquina
-//    public List listDetMaq(Producao producao) {
-//        Connection conexao = ConnectionFactory.getConecta();
-//        StringBuilder sb = new StringBuilder("SELECT maq_descricao, cat_descricao, cap_descricao, cor_descricao, "
-//                + "DATE_FORMAT(mov_data, '%d/%c/%Y') AS data, mov_hora FROM movimentacao NATURAL JOIN (SELECT prod_id, cat_descricao, cap_descricao, cor_descricao FROM produto NATURAL JOIN categoria "
-//                + "NATURAL JOIN capacidade NATURAL JOIN cor) AS prod NATURAL JOIN maquina WHERE 0 = 0");
-//        String data = producao.getData();
-//        if (data == null || data.isEmpty()) {
-//            sb.append(" AND mov_data = CURDATE()");
-//        } else {
-//            sb.append(" AND mov_data = '").append(data).append("'");
-//        }
-//        if (producao.getMaquina().getMaq_descricao() == null) {
-//            sb.append(" AND maq_id IS NOT NULL");
-//        } else {
-//            sb.append(" AND maq_descricao = '").append(producao.getMaquina().getMaq_descricao()).append("'");
-//        }
-//        sb.append(" ORDER BY mov_hora DESC");
-//        List listaProducao = null;
-//        try (PreparedStatement ps = conexao.prepareStatement(sb.toString()); ResultSet rs = ps.executeQuery()) {
-//            listaProducao = new ArrayList();
-//            while (rs.next()) {
-//                Producao produc = getProducaoDetalhada(rs);
-//                Object[] linhaProducao = {produc.getMaquina(), produc.getProduto(), produc.getData(), produc.getHora()};
-//                listaProducao.add(linhaProducao);
-//            }
-//        } catch (SQLException ex) {
-//            System.err.println(ex.getMessage());
-//        } finally {
-//            ConnectionFactory.desconecta(conexao);
-//        }
-//        return listaProducao;
-//    }
-
     //total produzido por maquina
     public List listFindTotalMaq(Producao producao) {
         Connection conexao = ConnectionFactory.getConecta();

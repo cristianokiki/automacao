@@ -619,12 +619,6 @@ public class ProducaoView extends javax.swing.JPanel {
         this.jTBProducao.setModel(tab);
     }
 
-//    private void preencheTabDetMaq(String maquina, String data) {
-//        List lista = PRODUCCNTRL.listarBuscarDetMaq(maquina, data);
-//        String[] coluna = {"MAQUINA", "PRODUTO", "DATA", "HORA"};
-//        Tabela tab = new Tabela(lista, coluna);
-//        this.jTBProducao.setModel(tab);
-//    }
     private void preencheTabTotalMaq(String data) {
         List lista = PRODUCCNTRL.listarBuscaMaq(data);
         String[] coluna = {"MÁQUINA", "QUANTIDADE"};
