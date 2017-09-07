@@ -511,9 +511,9 @@ public class ProducaoView extends javax.swing.JPanel {
     private void jBTBuscarMaqActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBTBuscarMaqActionPerformed
         if (this.jCBMaquina.getSelectedIndex() != 0) {
             if (!this.jFTFData2.getText().equals("  -  -    ")) {
-                this.preencheTabDetMaq(this.jCBMaquina.getSelectedItem().toString(), ValidacaoCntrl.formataData(this.jFTFData2.getText()));
+                this.preencheTabDetalhes(null, null, null, this.jCBMaquina.getSelectedItem().toString(), ValidacaoCntrl.formataData(this.jFTFData2.getText()), null);
             } else {
-                this.preencheTabDetMaq(this.jCBMaquina.getSelectedItem().toString(), null);
+                this.preencheTabDetalhes(null, null, null, this.jCBMaquina.getSelectedItem().toString(), null, null);
             }
         } else {
             if (!this.jFTFData2.getText().equals("  -  -    ")) {
@@ -619,13 +619,12 @@ public class ProducaoView extends javax.swing.JPanel {
         this.jTBProducao.setModel(tab);
     }
 
-    private void preencheTabDetMaq(String maquina, String data) {
-        List lista = PRODUCCNTRL.listarBuscarDetMaq(maquina, data);
-        String[] coluna = {"MAQUINA", "PRODUTO", "DATA", "HORA"};
-        Tabela tab = new Tabela(lista, coluna);
-        this.jTBProducao.setModel(tab);
-    }
-
+//    private void preencheTabDetMaq(String maquina, String data) {
+//        List lista = PRODUCCNTRL.listarBuscarDetMaq(maquina, data);
+//        String[] coluna = {"MAQUINA", "PRODUTO", "DATA", "HORA"};
+//        Tabela tab = new Tabela(lista, coluna);
+//        this.jTBProducao.setModel(tab);
+//    }
     private void preencheTabTotalMaq(String data) {
         List lista = PRODUCCNTRL.listarBuscaMaq(data);
         String[] coluna = {"MÁQUINA", "QUANTIDADE"};

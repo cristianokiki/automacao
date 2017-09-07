@@ -2,13 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/home/cristiano/Programacao/NetBeansProjects/automacao_industrial_21_08_17/src/br/com/servidor/TratamentoCliente.java</file>
-            <file>file:/home/cristiano/Programacao/NetBeansProjects/automacao_industrial_21_08_17/src/br/com/view/CaracteristicasProdutoView.java</file>
-            <file>file:/home/cristiano/Programacao/NetBeansProjects/automacao_industrial_21_08_17/src/br/com/view/ListaRetornoDialogView.java</file>
-            <file>file:/home/cristiano/Programacao/NetBeansProjects/automacao_industrial_21_08_17/src/br/com/conexao/ConnectionFactory.java</file>
-            <file>file:/home/cristiano/Programacao/NetBeansProjects/automacao_industrial_21_08_17/src/br/com/controller/ProducaoCntrl.java</file>
-            <file>file:/home/cristiano/Programacao/NetBeansProjects/automacao_industrial_21_08_17/src/br/com/dao/ProducaoDAO.java</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>
